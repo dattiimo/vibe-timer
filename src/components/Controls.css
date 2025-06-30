@@ -1,0 +1,59 @@
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.control-button {
+    width: 64px !important;
+    height: 64px !important;
+    transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.control-button:hover {
+    transform: scale(1.1);
+}
+
+.control-button svg {
+    font-size: 32px !important;
+    color: white;
+}
+
+.start-button {
+    background-color: #4CAF50 !important;
+}
+
+.start-button:hover {
+    background-color: #45a049 !important;
+}
+
+.pause-button {
+    background-color: #FF9800 !important;
+}
+
+.pause-button:hover {
+    background-color: #F57C00 !important;
+}
+
+.reset-button {
+    background-color: #f44336 !important;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f !important;
+}
+
+.break-button {
+    background-color: #2196F3 !important;
+}
+
+.break-button:hover {
+    background-color: #1976D2 !important;
+}
+
+.focus-button {
+    background-color: #673AB7 !important;
+}
+
+.focus-button:hover {
+    background-color: #512DA8 !important;
+}

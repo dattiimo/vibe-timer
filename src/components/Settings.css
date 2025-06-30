@@ -1,0 +1,104 @@
+.settings-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.settings-header h2 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.75rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.close-button svg {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .close-button {
+        min-width: 40px !important;
+        min-height: 40px !important;
+        padding: 0.5rem !important;
+    }
+
+    .close-button svg {
+        font-size: 28px;
+    }
+
+    .settings-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .settings-screen {
+        padding: 1rem;
+    }
+}
+
+.settings-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.setting-item input {
+    width: 80px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.setting-item input[type="time"] {
+    width: 120px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.setting-item input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(var(--is-dark-mode, 1));
+    cursor: pointer;
+}

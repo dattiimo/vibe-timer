@@ -1,0 +1,95 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.app-header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.app-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.app-footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: var(--text-color);
+    opacity: 0.6;
+    font-size: 0.75rem;
+}
+
+.app-footer a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: opacity 0.2s ease;
+}
+
+.app-footer a:hover {
+    opacity: 0.8;
+}
+
+.history-button, .settings-button {
+    background: none !important;
+    border: none !important;
+    color: var(--text-color) !important;
+    cursor: pointer !important;
+    padding: 0.75rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+}
+
+.history-button:hover, .settings-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50% !important;
+}
+
+.history-button svg, .settings-button svg {
+    font-size: 24px;
+}
+
+@media (min-width: 769px) {
+    .header-container {
+        padding: 2rem;
+    }
+
+    .history-button svg, .settings-button svg {
+        font-size: 32px;
+    }
+
+    .app-footer {
+        font-size: 1rem;
+    }
+}
+

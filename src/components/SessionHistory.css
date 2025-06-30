@@ -1,0 +1,96 @@
+.session-history {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    z-index: 1000;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.session-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.session-history-header h2 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.75rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.close-button:hover {
+    background-color: var(--hover-background);
+    border-radius: 50%;
+}
+
+.close-button svg {
+    font-size: 36px;
+}
+
+.session-history-content {
+    flex: 1;
+    overflow-y: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 0.5rem;
+}
+
+.session-history-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.session-history-content::-webkit-scrollbar-track {
+    background: var(--card-background);
+    border-radius: 4px;
+}
+
+.session-history-content::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.session-history-content::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-background);
+}
+
+@media (max-width: 768px) {
+    .close-button {
+        min-width: 40px !important;
+        min-height: 40px !important;
+        padding: 0.5rem !important;
+    }
+
+    .close-button svg {
+        font-size: 28px;
+    }
+
+    .session-history {
+        padding: 1rem;
+    }
+
+    .session-history-header {
+        margin-bottom: 1.5rem;
+    }
+}

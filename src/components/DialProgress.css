@@ -1,0 +1,36 @@
+.dial-progress {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dial-progress svg {
+    position: absolute;
+    transform: rotate(120deg);
+}
+
+.dial-progress .progress-background {
+    stroke: var(--ring-color);
+    stroke-opacity: 0.5;
+    fill: none;
+    stroke-linecap: round;
+}
+
+.dial-progress .progress-ring {
+    stroke: var(--ring-color);
+    fill: none;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+}
+
+.dial-progress .timer-display {
+    position: relative;
+    z-index: 1;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}

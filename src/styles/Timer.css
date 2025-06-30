@@ -1,0 +1,47 @@
+/* Timer.css */
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.timer-display {
+    font-size: 4rem;
+    color: #333;
+}
+
+.circular-progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circular-progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.start-button, .stop-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stop-button {
+    background-color: #f44336;
+    color: white;
+}

@@ -1,0 +1,71 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    z-index: 1100;
+    padding: 1rem;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: var(--text-color);
+}
+
+.cookie-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.cookie-buttons button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.accept-button {
+    background-color: var(--ring-color);
+    color: white;
+    border: none;
+}
+
+.accept-button:hover {
+    opacity: 0.9;
+}
+
+.reject-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.reject-button:hover {
+    background-color: var(--hover-background);
+}
+
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column;
+    }
+}

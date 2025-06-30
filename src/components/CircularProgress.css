@@ -1,0 +1,55 @@
+.circular-progress {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: min(calc(100vw - 40px), 400px);
+    height: min(calc(100vh - 200px), 400px);
+}
+
+.circular-progress svg {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-background {
+    fill: none;
+    stroke: var(--border-color);
+}
+
+.progress-ring {
+    fill: none;
+    stroke: var(--ring-color);
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 0.3s;
+    stroke-linecap: round;
+}
+
+.outer-progress-background {
+    fill: none;
+    stroke: var(--border-color);
+    opacity: 0.5;
+}
+
+.outer-progress-ring {
+    fill: none;
+    stroke: #40E0D0;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 0.3s;
+    stroke-linecap: round;
+}
+
+.center-circle {
+    fill: var(--ring-color);
+    opacity: 0.15;
+}
+
+.timer-display {
+    position: absolute;
+    font-size: min(7rem, 15vw);
+    font-weight: 500;
+    color: var(--text-color);
+    z-index: 1;
+}
