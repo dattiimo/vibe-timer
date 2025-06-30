@@ -5,6 +5,8 @@
 
 A minimal and elegant focus timer application built with React. Track your focus sessions and breaks with a beautiful circular progress interface.
 
+View a demo at [https://minitimer.app](https://minitimer.app)
+
 ![Screenshot of vibe timer running](https://raw.githubusercontent.com/dattiimo/vibe-timer/main/docs/vibe-timer-screenshot.png "Vibe Timer")
 
 
